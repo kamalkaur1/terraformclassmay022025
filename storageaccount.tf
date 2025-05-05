@@ -1,4 +1,4 @@
-resource "azurerm_storage_account" "storage" {
+resource "azurerm_storage_account" "mcitstorage" {
   name                     = var.storage_account_name
   resource_group_name      = azurerm_resource_group.terraformmay022025.name
   location                 = azurerm_resource_group.terraformmay022025.location
