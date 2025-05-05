@@ -12,5 +12,5 @@ variable "tenant_id"{
 }
 variable "storage_account_name"{
   type=string
-  value="mcit_storage_may02"
+  default="mcit_storage_may02"
 }
