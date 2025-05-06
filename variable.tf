@@ -37,3 +37,11 @@ variable "storageblobmay"{
   type=string
   default="mcitsstorageblobmay"
 }
+variable "blob_type"{
+  type=string
+  default="Block"
+}
+variable "blob_source"{
+type=string
+default="some-local-file.zip"
+}
