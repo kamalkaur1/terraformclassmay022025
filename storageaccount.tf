@@ -13,7 +13,7 @@ resource "azurerm_storage_account" "mcitstorage" {
 resource "azurerm_storage_container" "storagecontainermay" {
   name                  = var.storagecontainermay
   storage_account_id    = azurerm_storage_account.mcitstorage.id
-  container_access_type = "private"
+  container_access_type = var.container_access_type
 }
 
 resource "azurerm_storage_blob" "storageblobmay" {
