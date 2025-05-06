@@ -14,3 +14,26 @@ variable "storage_account_name"{
   type=string
   default="mcitstoragemay"
 }
+variable "account_tier"{
+  type=string
+  default="Premium"
+}
+variable "account_replication_type"{
+  type=string
+  default="ZRS"
+}
+
+variable "environment"{
+  type=string
+  default="production"
+}
+
+variable "storagecontainermay"{
+  type=string
+  default="mcitsstoragecontmay"
+}
+
+variable "storageblobmay"{
+  type=string
+  default="mcitsstorageblobmay"
+}
