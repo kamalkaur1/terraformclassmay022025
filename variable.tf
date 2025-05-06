@@ -22,6 +22,10 @@ variable "account_replication_type"{
   type=string
   default="ZRS"
 }
+variable "container_access_type"{
+type=string
+default="private"
+}
 
 variable "environment"{
   type=string
