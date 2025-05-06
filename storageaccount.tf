@@ -20,6 +20,6 @@ resource "azurerm_storage_blob" "storageblobmay" {
   name                   = var.storageblobmay
   storage_account_name   = azurerm_storage_account.mcitstorage.name
   storage_container_name = azurerm_storage_container.storagecontainermay.name
-  type                   = "Block"
-  source                 = "some-local-file.zip"
+  type                   = var.blob_type
+  source                 = var.blob_source
 }
