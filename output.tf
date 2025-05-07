@@ -17,3 +17,6 @@ for 1st element in -->inside the list variable winterlistOfSports--->"icehockey"
 for 2nd element in -->inside the list variable winterlistOfSports--->"snowboarding" 2nd element
 for 3rd element in -->inside the list variable winterlistOfSports--->"iceskating" 3rd element
 */
+output "total_sum" {
+  value = sum([for total in var.total_output : tonumber(total)])
+}
