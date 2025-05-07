@@ -20,3 +20,6 @@ for 3rd element in -->inside the list variable winterlistOfSports--->"iceskating
 output "total_sum" {
   value = sum([for total in local.total_output : tonumber(total)])
 }
+output "character_enemy_output" {
+  value = local.character_enemy_map
+}
