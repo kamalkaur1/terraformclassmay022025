@@ -23,3 +23,6 @@ output "total_sum" {
 output "character_enemy_output" {
   value = local.character_enemy_map
 }
+output "character_enemy_output_map" {
+  value = local.character_enemy_map_second
+}
