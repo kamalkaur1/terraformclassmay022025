@@ -26,3 +26,15 @@ output "character_enemy_output" {
 output "character_enemy_output_map" {
   value = local.character_enemy_map_second
 }
+output "extract_mcit" {
+  value = substr(var.full_text, 21, 4)
+}
+/*
+substr(string, offset, length)
+string: The full input string.
+offset: Starting index (0-based).
+length: Number of characters to extract.
+Sentence: "I am a student at mcit"
+Index of "m" in "mcit" → Position 21 (0-based)
+Length of "mcit" → 4
+*/
