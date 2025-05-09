@@ -40,5 +40,5 @@ Index of "m" in "mcit" → Position 18 (0-based)
 Length of "mcit" → 4
 */
 output "extract_canada" {
-  value = substr(var.full_text, 26, 6)
+  value = substr(var.classwork, 26, 6)
 }
