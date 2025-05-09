@@ -30,11 +30,12 @@ output "extract_mcit" {
   value = substr(var.full_text, 18, 4)
 }
 /*
+"I am a student at mcit"
 substr(string, offset, length)
 string: The full input string.
 offset: Starting index (0-based).
 length: Number of characters to extract.
 Sentence: "I am a student at mcit"
-Index of "m" in "mcit" → Position 22 (0-based)
+Index of "m" in "mcit" → Position 18 (0-based)
 Length of "mcit" → 4
 */
