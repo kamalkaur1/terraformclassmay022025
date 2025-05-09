@@ -27,7 +27,7 @@ output "character_enemy_output_map" {
   value = local.character_enemy_map_second
 }
 output "extract_mcit" {
-  value = substr(var.full_text, 22, 4)
+  value = substr(var.full_text, 18, 4)
 }
 /*
 substr(string, offset, length)
