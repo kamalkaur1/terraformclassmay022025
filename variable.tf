@@ -49,3 +49,7 @@ variable "blob_source"{
 type=string
 default="some-local-file.zip"
 }
+variable "full_text" {
+type=string
+  default = "I am a student at mcit"
+}
