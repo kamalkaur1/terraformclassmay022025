@@ -53,3 +53,7 @@ variable "full_text" {
 type=string
   default = "I am a student at mcit"
 }
+variable "classwork" {
+type=string
+  default = "I love the country called Canada, it is awesome"
+}
