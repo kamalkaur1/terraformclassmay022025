@@ -57,3 +57,7 @@ variable "classwork" {
 type=string
   default = "I love the country called Canada, it is awesome"
 }
+variable "name"{
+type=string
+default="onome"
+}
