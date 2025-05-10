@@ -42,3 +42,6 @@ Length of "mcit" → 4
 output "extract_canada" {
   value = substr(var.classwork, 26, 6)
 }
+output "name_output"{
+  value =var.name
+}
