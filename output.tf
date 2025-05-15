@@ -52,6 +52,7 @@ value = element(split(",", local.text_1) , length (split ("," , local.text_1)) -
 output "excercise_4" {
   value = element(["Antoine", "Ovadia", "Onome", "Sean", "Negar"], 4)
 }
-string-->"Antoine,Ovadia,Onome,Sean,Negar"--->split by seperator ","
+/*string-->"Antoine,Ovadia,Onome,Sean,Negar"--->split by seperator ","
 -->convert into 
 list of string["Antoine", "Ovadia", "Onome", "Sean", "Negar"]
+*/
