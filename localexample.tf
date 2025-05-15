@@ -10,4 +10,5 @@ locals{
   character => local.enemies_destroyed
   }
   character_enemy_map_second = zipmap(local.characters, local.enemies_destroyed)
+  text_1="Antoine,Ovadia,Onome,Sean,Negar"
 }
