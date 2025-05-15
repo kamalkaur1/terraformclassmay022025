@@ -45,3 +45,7 @@ output "extract_canada" {
 output "name_output"{
   value =var.name
 }
+
+output "excercise_3" {
+value = element(split(",", local.text_1) , length (split ("," , local.text_1)) -1)
+}
