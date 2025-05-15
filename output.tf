@@ -50,5 +50,8 @@ output "excercise_3" {
 value = element(split(",", local.text_1) , length (split ("," , local.text_1)) -1)
 }
 output "excercise_4" {
-  value = element(["Antoine", "Ovadia", "Onome", "Sean", "Negar"], 5)
+  value = element(["Antoine", "Ovadia", "Onome", "Sean", "Negar"], 4)
 }
+string-->"Antoine,Ovadia,Onome,Sean,Negar"--->split by seperator ","
+-->convert into 
+list of string["Antoine", "Ovadia", "Onome", "Sean", "Negar"]
