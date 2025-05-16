@@ -23,3 +23,6 @@ resource "azurerm_storage_account" "mcitstoremay2025" {
   account_tier              = "Standard"
   account_replication_type = "LRS"
 }
+output "mcit16may2025"{
+  value=local.full_service_names
+}
