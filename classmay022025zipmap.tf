@@ -1,4 +1,4 @@
-variable "environments" {
+variable "environments_second" {
   default = ["dev", "qa", "stage", "prod"]
 }
 
@@ -8,7 +8,7 @@ variable "service_names_town" {
 
 locals {
   # Validate lengths match (optional but good practice)
-  env_service_map = zipmap(var.environments, var.service_names_town)
+  env_service_map = zipmap(var.environments_second, var.service_names_town)
 }
 
 resource "azurerm_storage_account" "mcitstoremay2025second" {
