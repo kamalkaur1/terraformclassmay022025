@@ -1,5 +1,5 @@
 variable "service_name" {
-  default = "abracadabra"
+  default = "mcit"
 }
 
 variable "environments" {
