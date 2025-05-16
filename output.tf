@@ -1,6 +1,10 @@
 output "print"{
     value = local.servicename
 }
+output "print1"{
+    value = local.full_servicename
+}
+
 output "secondprint"{
     value = local.forum
 }
