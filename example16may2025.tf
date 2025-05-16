@@ -9,7 +9,7 @@ variable "environments" {
 locals {
   full_service_names = {
     for env in var.environments :
-    env => "${var.service_name}-${env}"
+    env => "${env}${var.service_name}"
   }
 }
 
@@ -18,7 +18,7 @@ resource "azurerm_storage_account" "mcitstoremay2025" {
 
 
   name                     = each.value
-  resource_group_name      = "mcit-resources"
+  resource_group_name      = "mcitresources"
   location                 = "East US"
   account_tier              = "Standard"
   account_replication_type = "LRS"
