@@ -1,6 +1,7 @@
 locals{
   servicename="abracadabra"
-  full_servicename = "${local.servicename}-prod"
+  env="non-prod"
+  full_servicename = "${local.servicename}-${local.env}"
   forum="abracadabramcit"
   lengthsa=length(local.servicename)
   winterlistOfSports=["icehockey","snowboarding","iceskating"]
