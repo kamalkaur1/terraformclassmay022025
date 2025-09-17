@@ -26,6 +26,10 @@ variable "container_access_type"{
 type=string
 default="private"
 }
+variable "words" {
+ type    = list(string)
+ default = ["hi", "cat", "car", "tree", "hi", "car"]
+}
 
 variable "environment"{
   type=string
